@@ -1,6 +1,27 @@
-
+.site-list {
+  .list-reset();
+}
 .site-list__item {
-  background-color: @bg-lightblue;
+  height: 56px;
+}
+.site-list a{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: 333px;
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .site-list a{
+    color: @black;
+  }
+
 
 }
 
