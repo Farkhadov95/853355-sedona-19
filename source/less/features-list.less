@@ -1,6 +1,6 @@
 .features-list {
   .list-reset();
-  background-color: #ffffff;
+  background-color: @white;
 }
 
 .features-list {
@@ -13,4 +13,23 @@
 .features-list__text {
   font-size: 14px;
   line-height: 21px;
+}
+.features-list__item {
+}
+
+@media (min-width: @tablet-width) {
+  .features-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .features-list__item {
+    height: 330px;
+    width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-list__item {
+    width: 400px;
+  }
 }
