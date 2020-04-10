@@ -1,6 +1,32 @@
+.describe {
+  width: 280px;
+  margin: 0 auto;
+  // outline: 2px solid red;
+}
 .describe__title {
+  font-size: 18px;
   font-weight: bold;
 }
 .describe__textarea {
+  width: 100%;
   resize: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+.desctibe_button {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .describe {
+    width: 648px;
+    order: 5;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .describe {
+    width: 960px;
+  }
 }

@@ -1,6 +1,70 @@
+.contact {
+  width: 280px;
+  margin: 0 auto;
+  text-align: start;
+  // outline: 2px solid red;
+}
 .contact__title {
+  text-align: center;
+  font-size: 18px;
   font-weight: bold;
 }
 .contact__item {
   font-size: 14px;
+  color: @darkgrey;
+}
+.contact__input-wrapper {
+  position: relative;
+}
+.contact__input-wrapper input {
+  width: 280px;
+  height: 58px;
+  padding: 0;
+}
+.contact__button {
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+@media (min-width: @tablet-width) {
+  .contact {
+    width: 650px;
+    order: 3;
+    margin: 0;
+  }
+  .contact__input-wrapper input {
+    width: 650px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact {
+    width: 960px;
+  }
+  .contact__item {
+    //при width: 480px не совпадает с макетом
+    width: 490px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact__phone {
+    width: 400px;
+  }
+  .contact__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact__input-wrapper {
+    width: 315px;
+  }
+  .contact__input-wrapper input {
+    width: 315px;
+  }
+  .contact__item span {
+    display: none;
+  }
 }
