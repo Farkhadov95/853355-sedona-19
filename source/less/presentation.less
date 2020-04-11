@@ -5,3 +5,46 @@
   font-size: 14px;
   line-height: 24px;
 }
+
+.presentation__controls-wrapper {
+  width: 280px;
+  height: 111px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  //временно
+  // outline: 2px solid red;
+  }
+
+  .presentation__range {
+    width: 280px;
+  }
+  .presentation__rewatch-button {
+    margin-right: auto;
+  }
+
+
+  @media (min-width: @tablet-width) {
+    .presentation__controls-wrapper {
+      width: 648px;
+      height: 93px;
+      align-content: center;
+      justify-content: space-between;
+    }
+    .presentation__rewatch-button {
+      margin-right: initial;
+      order: -1;
+    }
+    .presentation__range {
+      width: 389px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .presentation__controls-wrapper {
+      width: 800px;
+    }
+    .presentation__range {
+      width: 540px;
+    }
+  }

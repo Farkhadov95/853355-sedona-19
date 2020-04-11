@@ -1,7 +1,37 @@
+.impression {
+  width: 280px;
+  margin: 0 auto;
+  text-align: start;
+  // outline: 2px solid red;
+}
 .impression__title {
+  font-size: 18px;
+  text-align: center;
   font-weight: bold;
 }
+.impression__list {
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .impression__item {
+  width: 261px;
+  height: 56px;
   font-weight: bold;
   text-transform: initial;
+  .list-reset();
+}
+
+
+@media (min-width: @tablet-width) {
+  .impression {
+    order: 1;
+    margin: 0;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
 }

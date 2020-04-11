@@ -46,92 +46,92 @@
     <section class="user-info">
       <h3 class="user-info__title">Представьтесь:</h3>
         <p class="user-info__item">
-          <label>
-            Имя*:
-            <input type="text" name="name" placeholder="Петр">
-          </label>
+          <label for="name">Имя*:</label>
+          <input type="text" id="name" name="name" placeholder="Петр">
         </p>
         <p class="user-info__item">
-          <label>
-            Фамилия*:
-            <input type="text" name="surname" placeholder="Иванов">
-          </label>
+            <label for="surname">Фамилия*:</label>
+            <input type="text" id="surname" name="surname" placeholder="Иванов">
         </p>
         <p class="user-info__item">
-          <label>
-            Отчество:
-            <input type="text" name="middle-name" placeholder="Александрович">
-          </label>
+          <label for="middle-name">Отчество:</label>
+           <input type="text" id="middle-name" name="middle-name" placeholder="Александрович">
         </p>
     </section>
 
     <section class="contact">
       <h3 class="contact__title">Контактная информация:</h3>
-      <p class="contact__item">
-        <label>
-          Контактный телефон*:
-          <input type="tel" name="phone" placeholder="Введите телефон">
-        </label>
-        <button class="contact__button button" type="button"></button>
-      </p>
+      <div class="contact__wrapper">
+        <div class="contact__item contact__phone">
+            <label class="contact__type" for="phone"><span>Контактный</span> телефон*:</label>
+            <div class="contact__input-wrapper">
+              <input type="tel" id="phone" name="phone" placeholder="Введите телефон">
+              <button class="contact__button button" type="button"></button>
+            </div>
+        </div>
 
-      <p class="contact__item">
-        <label>
-          Электронная почта*:
-          <input type="email" name="email" placeholder="Введите e-mail">
-        </label>
-        <button class="contact__button button" type="button"></button>
-      </p>
+        <div class="contact__item">
+            <label class="contact__type" for="email">Электронная почта*:</label>
+            <div class="contact__input-wrapper">
+              <input type="email" id="email" name="email" placeholder="Введите e-mail">
+              <button class="contact__button button" type="button"></button>
+            </div>
+        </div>
+      </div>
     </section>
 
     <section class="impression">
       <h3 class="impression__title">Ваше Общее впечатление:</h3>
-        <p class="impression__item">
+      <ul class="impression__list">
+        <li class="impression__item">
           <label>
             <input class="visually-hidden" type="checkbox" name="positive-impression">
             Скорее положительное
           </label>
-        </p>
-        <p class="impression__item">
+        </li>
+        <li class="impression__item">
           <label>
             <input class="visually-hidden" type="checkbox" name="negative-impression">
             Скорее отрицательное
           </label>
-        </p>
-        <p class="impression__item">
+        </li>
+        <li class="impression__item">
           <label>
             <input class="visually-hidden" type="checkbox" name="mixed-impression">
             Затрудняюсь ответить
           </label>
-        </p>
+        </li>
+      </ul>
     </section>
 
     <section class="visits">
       <h3 class="visits__title">посещенные достопримечательности:</h3>
-        <p class="visits__item">
+      <ul class="visits__list">
+        <li class="visits__item">
           <label>
             <input class="visually-hidden" type="checkbox" name="Мост Дьявола">
             Мост Дьявола
           </label>
-        </p>
-        <p class="visits__item">
+        </li>
+        <li class="visits__item">
           <label>
             <input class="visually-hidden" type="checkbox" name="Гора-Колокол">
             Гора-Колокол
           </label>
-        </p>
-        <p class="visits__item">
+        </li>
+        <li class="visits__item">
           <label>
             <input class="visually-hidden" type="checkbox" name="Слайд-паркt">
             Слайд-парк
           </label>
-        </p>
-        <p class="visits__item">
+        </li>
+        <li class="visits__item">
           <label>
             <input class="visually-hidden" type="checkbox" name="Красные скалы">
             Красные скалы
           </label>
-        </p>
+        </li>
+      </ul>
     </section>
 
     <section class="describe">

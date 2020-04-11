@@ -1,6 +1,40 @@
+.user-info {
+  width: 280px;
+  margin: 0 auto;
+  text-align: start;
+  // outline: 2px solid red;
+}
+
 .user-info__title {
+  text-align: center;
+  font-size: 18px;
   font-weight: bold;
 }
 .user-info__item {
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.user-info__item input {
+  flex-grow: 1;
+  margin-left: 14px;
+  height: 58px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .user-info {
+    order: 2;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-info {
+    width: 400px;
+  }
+}
+
+

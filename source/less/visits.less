@@ -1,7 +1,45 @@
+.visits {
+  width: 280px;
+  margin: 0 auto;
+  text-align: start;
+  // outline: 2px solid red;
+}
 .visits__title {
+  font-size: 18px;
   font-weight: bold;
+  text-align: center;
 }
 .visits__item {
   font-weight: bold;
   text-transform: initial;
+}
+
+@media (min-width: @tablet-width) {
+  .visits {
+    width: 460px;
+    height: 233px;
+    order: 4;
+    margin: 0 auto;
+  }
+  .visits__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .list-reset();
+  }
+  .visits__item {
+    width: 230px;
+    height: 55px;
+  }
+  .visits__title {
+    font-size: 21px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visits {
+    width: 956px;
+    height: 145px;
+  }
 }
