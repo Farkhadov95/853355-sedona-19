@@ -1,3 +1,29 @@
 .social {
   .list-reset();
+  width: 151px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.social__item {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: @bg-lightblue;
+  line-height: 18px;
+  &:hover,
+  &:focus {
+    background-color: @bg-hoverblue;
+  }
+  &:active {
+    background-color: @bg-downblue;
+  }
+  &:active svg {
+    fill: @down-font;
+  }
+}
+.social__item svg {
+  fill: @white;
 }

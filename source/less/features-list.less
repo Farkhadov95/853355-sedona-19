@@ -1,35 +1,85 @@
 .features-list {
   .list-reset();
   background-color: @white;
+  text-align: start;
+  min-height: 416px;
+  display: flex;
+  flex-direction: column;
+
+  // outline: 1px solid red;
+}
+.features-list__item {
+  // outline: 1px solid red;
 }
 
-.features-list {
-  text-align: start;
+.features-list__content {
+  width: 210px;
+  margin-left: 70px;
+  min-height: 99px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // outline: 1px solid green;
+}
+.features-living {
+  margin-top: 37px;
+}
+.features-food {
+  margin-top: 32px;
+  min-height: 79px;
+}
+.features-souvenirs {
+  margin-top: 31px;
+  margin-bottom: 39px;
 }
 
 .features-list__title {
+  font-size: 18px;
+  font-family: "PT Sans Bold";
+  line-height: 26px;
   font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 .features-list__text {
   font-size: 14px;
   line-height: 21px;
-}
-.features-list__item {
+  color: @darkgrey;
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .features-list {
-    display: flex;
-    justify-content: space-between;
+    min-height: 330px;
+    flex-direction: row;
+
+    // outline: 1px solid red;
   }
   .features-list__item {
-    height: 330px;
     width: 256px;
+    height: 330px;
+
+    outline: 1px solid red;
+  }
+
+  .features-list__content {
+    min-width: 159px;
+    height: 204px;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+
+
+    outline: 1px solid green;
   }
 }
 
 @media (min-width: @desktop-width) {
   .features-list__item {
     width: 400px;
+  }
+  .features-list__content {
+    min-width: 283px;
   }
 }
