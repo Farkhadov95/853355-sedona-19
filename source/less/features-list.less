@@ -8,9 +8,6 @@
 
   // outline: 1px solid red;
 }
-.features-list__item {
-  // outline: 1px solid red;
-}
 
 .features-list__content {
   width: 210px;
@@ -24,11 +21,11 @@
 .features-living {
   margin-top: 37px;
 }
-.features-food {
+.features-souvenirs {
   margin-top: 32px;
   min-height: 79px;
 }
-.features-souvenirs {
+.features-food {
   margin-top: 31px;
   margin-bottom: 39px;
 }
@@ -36,7 +33,7 @@
 .features-list__title {
   font-size: 18px;
   font-family: "PT Sans Bold";
-  line-height: 26px;
+  line-height: 18px;
   font-weight: bold;
   padding: 0;
   margin: 0;
@@ -62,16 +59,29 @@
 
     outline: 1px solid red;
   }
+  .features-list__item-souvenirs {
+    order: 2;
+  }
 
   .features-list__content {
-    min-width: 159px;
-    height: 204px;
+    width: 163px;
+    min-height: 208px;
     margin: auto;
     margin-top: 60px;
     text-align: center;
 
-
     outline: 1px solid green;
+  }
+  .features-list__title {
+    font-size: 21px;
+    margin-top: 104px;
+    // margin-bottom: 23px;
+  }
+  .features-list__text {
+    margin-top: auto;
+  }
+  .features-list__text-food {
+    width: 158px;
   }
 }
 
@@ -81,5 +91,12 @@
   }
   .features-list__content {
     min-width: 283px;
+  }
+
+  .features-list__text {
+    margin-bottom: 20px;
+  }
+  .features-list__text-food {
+    width: 283px;
   }
 }

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+  padding: 0;
 }
 .social__item {
   width: 46px;
@@ -12,7 +13,8 @@
   align-items: center;
   justify-content: center;
   background-color: @bg-lightblue;
-  line-height: 18px;
+  padding: 0;
+  margin: 0;
   &:hover,
   &:focus {
     background-color: @bg-hoverblue;
@@ -26,4 +28,11 @@
 }
 .social__item svg {
   fill: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    padding-right: 4px;
+    padding-bottom: 4px;
+  }
 }
