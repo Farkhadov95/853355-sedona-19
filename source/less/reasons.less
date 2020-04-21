@@ -9,8 +9,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  outline: 1px solid red;
 }
 
 .reasons__main-title {
@@ -133,6 +131,14 @@
   padding: 0;
   margin: 0;
 }
+.reasons__img {
+  height: 260px;
+}
+
+.reasons__img img{
+  width: 320px;
+  height: 260px;
+}
 
 
 @media (min-width: @tablet-width) {
@@ -140,8 +146,6 @@
     width: 490px;
     height: 108px;
     margin: 49px auto;
-
-    outline: 1px solid red;
   }
   .reasons__main-title {
     font-size: 21px;
@@ -205,10 +209,14 @@
   .reasons__img {
     width: 512px;
     height: 256px;
-
-    //Временно для сетки
-    outline: 2px solid red;
+    margin: 0;
+    padding: 0;
   }
+  .reasons__img img{
+    width: 512px;
+    height: 256px;
+  }
+
   .reasons__img--bridge {
     height: 256px;
     order: -1;
@@ -254,11 +262,16 @@
     height: 256px;
   }
 
+  .reasons__img img{
+    width: 800px;
+    height: 256px;
+  }
+
   .reasons__wrapper {
     width: 400px;
   }
   .reasons__content {
-    width: 265px;
+    width: 268px;
     min-height: 146px;
     margin-top: 53px;
   }
