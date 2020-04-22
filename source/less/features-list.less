@@ -5,30 +5,27 @@
   min-height: 416px;
   display: flex;
   flex-direction: column;
-
-  // outline: 1px solid red;
 }
 .features-list__item {
   position: relative;
-  // outline: 1px solid red;
 }
 .features-list__item svg {
   position: absolute;
   fill: @bg-lightblue;
 }
-.house-img {
+.features__house-img {
   top: 26px;
   left: 22px;
   width:37px;
   height: 36px;
 }
-.gift-img {
+.features__gift-img {
   top: 19px;
   left: 23px;
   width:37px;
   height: 36px;
 }
-.burger-img {
+.features__burger-img {
   top: 23px;
   left: 20px;
   width:37px;
@@ -57,10 +54,9 @@
 }
 
 .features-list__title {
+  .font-bold ();
   font-size: 18px;
-  font-family: "PT Sans Bold";
   line-height: 18px;
-  font-weight: bold;
   padding: 0;
   margin: 0;
 }
@@ -80,22 +76,12 @@
   .features-list__item {
     width: 256px;
     height: 330px;
-    // outline: 1px solid red;
   }
   .features-list__item-souvenirs {
     order: 2;
   }
 
   .features-list__content {
-    // width: 163px;
-    // min-height: 208px;
-    // margin: auto;
-    // margin-top: 60px;
-    // text-align: center;
-
-    // outline: 1px solid green;
-
-
     width: 163px;
     min-height: 107px;
     margin: 162px auto auto;
@@ -110,19 +96,19 @@
   .features-list__text-food {
     width: 158px;
   }
-  .house-img {
+  .features__house-img {
     top: 60px;
     left: 90px;
     width:75px;
     height: 72px;
   }
-  .gift-img {
+  .features__gift-img {
     top: 57px;
     left: 96px;
     width: 64px;
     height: 75px;
   }
-  .burger-img {
+  .features__burger-img {
     top: 63px;
     left: 89px;
     width: 77px;
@@ -141,22 +127,25 @@
   .features-list__text {
     margin-bottom: 20px;
   }
+  .features__text-block {
+    display: block;
+  }
   .features-list__text-food {
     width: 283px;
   }
-  .house-img {
+  .features__house-img {
     top: 60px;
     left: 161px;
     width: 75px;
     height: 72px;
   }
-  .gift-img {
+  .features__gift-img {
     top: 57px;
     left: 168px;
     width: 64px;
     height: 75px;
   }
-  .burger-img {
+  .features__burger-img {
     top: 63px;
     left: 161px;;
     width: 77px;

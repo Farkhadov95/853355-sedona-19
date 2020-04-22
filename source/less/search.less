@@ -11,10 +11,9 @@
 
 }
 .search__title {
+  .font-bold ();
   font-size: 21px;
   line-height: 26px;
-  font-family: "PT Sans Bold";
-  font-weight: bold;
   margin: 0;
   padding: 0;
 
@@ -27,6 +26,7 @@
   padding: 0;
 }
 .search__button {
+  .font-bold ();
   display: block;
   width: 186px;
   margin: auto;
@@ -34,8 +34,6 @@
   text-decoration: none;
   color: @white;
   font-size: 21px;
-  font-weight: bold;
-  font-family: "PT Sans Bold";
   line-height: 26px;
   background-color: @bg-lightblue;
   padding: 15px 47px;
@@ -61,12 +59,15 @@
 @media (min-width: @tablet-width) {
   .search__content {
     width: 436px;
-    min-height: 103px;
+    min-height: 106px;
     margin-top: 54px;
     margin-bottom: 44px;
   }
   .search__title {
     font-size: 30px;
+  }
+  .search__text-block {
+    display: block;
   }
 
   .search__button {
@@ -78,7 +79,7 @@
 
 @media (min-width: @desktop-width) {
   .search__content {
-    margin-bottom: 51px;
+    margin-bottom: 49px;
   }
   .search__button {
     margin-bottom: 66px;

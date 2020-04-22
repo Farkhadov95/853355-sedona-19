@@ -5,16 +5,15 @@
   width: 255px;
   height: 159px;
 
-  margin: 39px auto 23px;
+  margin: 39px auto 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .reasons__main-title {
+  .font-bold ();
   font-size: 18px;
-  font-weight: bold;
-  font-family: "PT Sans Bold";
   line-height: 26px;
   text-align: center;
   padding: 0;
@@ -29,26 +28,34 @@
   margin: 0;
 }
 .reasons__wrapper {
-  height: 211px;
+  height: 230px;
   background-color: @bg-lightblue;
   color: @white;
   display: flex;
+
+  position: relative;
 }
 .reasons__content {
-  width: 265px;
+  width: 268px;
   height: 112px;
   margin: auto;
-  margin-top: 57px;
+  margin-top: 75px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  // outline: 1px solid red;
+  &::after {
+    content: url(../img/bg-triangle.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 37px;
+    width: 320px;
+  }
 }
 .reasons__title {
+  .font-bold ();
   font-size: 18px;
-  font-weight: bold;
-  font-family: "PT Sans Bold";
   line-height: 26px;
   margin: 0;
   padding: 0;
@@ -83,9 +90,8 @@
   // outline: 1px solid red;
 }
 .reasons__title-lower {
+  .font-bold ();
   font-size: 18px;
-  font-weight: bold;
-  font-family: "PT Sans Bold";
   line-height: 18px;
   margin: 0;
   padding: 0;
@@ -96,7 +102,6 @@
 .reasons__text-lower {
   font-size: 14px;
   line-height: 21px;
-  font-family: "PT Sans";
   padding: 0;
   margin: 0;
 }
@@ -116,9 +121,8 @@
 }
 
 .reasons__title-colored {
+  .font-bold ();
   font-size: 18px;
-  font-weight: bold;
-  font-family: "PT Sans Bold";
   line-height: 18px;
   margin: 0;
   padding: 0;
@@ -126,7 +130,6 @@
 .reasons__text-colored {
   font-size: 14px;
   line-height: 21px;
-  font-family: "PT Sans";
   color: @darkgrey;
   padding: 0;
   margin: 0;
@@ -139,7 +142,6 @@
   width: 320px;
   height: 260px;
 }
-
 
 @media (min-width: @tablet-width) {
   .reasons__header {
@@ -167,6 +169,9 @@
     width: 162px;
     min-height: 166px;
     margin-top: 46px;
+    &::after {
+      content: none;
+    }
   }
   .reasons__title {
     font-size: 21px;
@@ -235,8 +240,7 @@
 
   }
   .reasons__title-colored {
-    font-weight: bold;
-    font-family: "PT Sans Bold";
+    .font-bold ();
     font-size: 21px;
     line-height: 26px;
     margin: 0;
@@ -277,6 +281,9 @@
   }
   .reasons__title {
     padding: 0 40px;
+  }
+  .reasons__title-block {
+    display: block;
   }
   .reasons__number {
     margin-bottom: 13px;
