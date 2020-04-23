@@ -1,3 +1,35 @@
 .social {
-  .list-reset();
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.social__item {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: @bg-lightblue;
+  padding: 0;
+  margin: 0;
+  &:hover,
+  &:focus {
+    background-color: @bg-hoverblue;
+  }
+  &:active {
+    background-color: @bg-downblue;
+  }
+  &:active svg {
+    fill: @down-font;
+  }
+}
+.social__item svg {
+  fill: @white;
+}
+
+@media (min-width: @tablet-width) {
+  // .social {
+  //   padding-right: 4px;
+  //   padding-bottom: 4px;
+  // }
 }
