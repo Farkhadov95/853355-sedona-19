@@ -1,37 +1,131 @@
 .impression {
+  width: 320px;
+  height: 287px;
+  border-top: 1px solid @line-color;
+}
+.impression__container {
   width: 280px;
-  margin: 0 auto;
   text-align: start;
-  // outline: 2px solid red;
+  margin: 0 auto;
+  margin-top: 14px;
 }
 .impression__title {
-  .font-bold ();
-  font-size: 18px;
+  .font-bold();
+  .mp-reset ();
+
+  margin-bottom: 24px;
   text-align: center;
+  font-size: 18px;
 }
 .impression__list {
-  height: 212px;
+  .mp-reset ();
+  height: 194px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 0;
 }
 .impression__item {
-  .font-bold ();
-  width: 261px;
-  height: 56px;
-  text-transform: initial;
   .list-reset();
+  .font-bold ();
+  font-size: 18px;
+  line-height: 57px;
+  height: 58px;
+  text-transform: initial;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+.impression__checkbox {
+  position: relative;
+  padding-left: 78px;
+  cursor: pointer;
+}
+.impression__checkbox input[type="checkbox"] {
+  display: none;
+}
+.impression__checkbox input[type="checkbox"] + .impression__checkbox-indicator {
+  position: absolute;
+  left: 0;
+
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: @form-bg;
+}
+.impression__checkbox input[type="checkbox"]:focus + .impression__checkbox-indicator {
+  outline: thin dotted;
+}
+
+.impression__checkbox input[type="checkbox"]:hover + .impression__checkbox-indicator {
+  background-color: @form-hover;
+}
+.impression__checkbox input[type="checkbox"]:checked + .impression__checkbox-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 17px;
+
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: black;
 }
 
 
 @media (min-width: @tablet-width) {
   .impression {
+    .mp-reset();
     order: 1;
-    margin: 0;
+    width: 325px;
+    height: 300px;
+    border-top: none;
+  }
+  .impression__title {
+    .mp-reset();
+  }
+  .impression__container {
+    .mp-reset();
+    height: 300px;
+    margin-right: auto;
+  }
+  .impression__title {
+    .mp-reset();
+    font-size: 21px;
+    margin-bottom: 57px;
+  }
+  .impression__list {
+    height: 214px;
+  }
+  .impression__checkbox {
+    padding-left: 75px;
   }
 
 }
 
 @media (min-width: @desktop-width) {
+  .impression {
+    width: 480px;
+  }
+  .impression__container {
+    .mp-reset();
+    width: 400px;
+    height: 300px;
+    margin-right: auto;
+  }
+  .impression__title {
+    .mp-reset();
+    font-size: 21px;
+    margin-bottom: 57px;
+    padding-left: 30px;
+  }
+  .impression__list {
+    height: 214px;
+  }
+  .impression__checkbox {
+    padding-left: 78px;
+  }
+
 
 }

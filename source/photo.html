@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
 
       <div class="main-nav__wrapper">
         <ul class="site-list">
@@ -46,6 +46,30 @@
       <img src="img/text-sedona.svg" alt="">
     </div>
   </header>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+    var closeToggle = document.querySelector('.main-nav__close-cross');
+    closeToggle.addEventListener('click', function() {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+  });
+
+  </script>
 
   <main class="page-main">
     <section class="gallery">
