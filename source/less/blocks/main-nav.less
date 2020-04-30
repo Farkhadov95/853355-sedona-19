@@ -2,7 +2,6 @@
   min-width: 320px;
   min-height: 56px;
   margin: 0 auto;
-
   position: relative;
 }
 
@@ -16,7 +15,6 @@
   height: 21px;
   cursor: pointer;
   border: none;
-
   background-color: @white;
 }
 
@@ -25,58 +23,50 @@
   top: 17px;
   right: 20px;
   z-index: 2;
-
   display: block;
-
   width: 23px;
   height: 22px;
   background-color: transparent;
-
   cursor: pointer;
   border: none;
   padding: 0;
 
-    &::before,
-    &::after {
-      content: "";
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 23px;
+    height: 2px;
+    background-color: @white;
+  }
 
-      position: absolute;
-      top: 10px;
-      right: 0;
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
 
-      width: 23px;
-      height: 2px;
-      background-color: @white;
-    }
-    &::before {
-      transform: rotate(45deg);
-      box-shadow: none;
-    }
-    &::after {
-      transform: rotate(-45deg);
-    }
-    &:active::before,
-    &:active::after {
-      background-color: rgba(255, 255, 255, 0.3);
-    }
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .main-nav .main-nav__toggle::before {
   content: "";
-
   position: absolute;
-
-  top: 0px;
-  right: 0px;
-
-  width: 23px;
-  height: 4px;
-
+  top: 0;
+  right: 0;
+  width: 23;
+  height: 4;
   background-color: @bg-lightblue;
-  box-shadow: 0 8px 0 0 rgba(129, 179, 210, 1),
-   0 16px 0 0 rgba(129, 179, 210, 1);
+  box-shadow: 0 8px 0 0 rgba(129, 179, 210, 1), 0 16px 0 0 rgba(129, 179, 210, 1);
 }
-
 
 .main-nav__wrapper {
   .font-bold ();
@@ -94,10 +84,12 @@
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
-  .main-nav--nojs .main-nav__wrapper{
+
+  .main-nav--nojs .main-nav__wrapper {
     position: static;
     min-height: 0;
   }
+
   .main-nav--nojs .site-list__item {
     display: block;
   }
@@ -110,6 +102,8 @@
 
   .main-nav__wrapper {
     min-height: 56px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .main-nav__toggle {
@@ -118,10 +112,5 @@
 
   .main-nav__close-cross {
     display: none;
-  }
-
-  .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
   }
 }

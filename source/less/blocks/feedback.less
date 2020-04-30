@@ -6,12 +6,14 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .feedback__title {
   font-size: 18px;
   line-height: 26px;
   .font-bold ();
   .mp-reset ();
 }
+
 .feedback__text {
   .mp-reset ();
   color: @darkgrey;
@@ -28,23 +30,24 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
   .feedback__title {
     font-size: 30px;
     line-height: 26px;
   }
-
 }
 
-@media (min-width: @desktop-width){
+@media (min-width: @desktop-width) {
   .feedback {
-    margin: 108px auto 57px;
+    margin: 112px auto 57px;
+    min-height: 105px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
   .feedback__title {
     font-size: 30px;
     line-height: 26px;
   }
 }
-
