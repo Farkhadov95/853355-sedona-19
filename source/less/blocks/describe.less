@@ -1,10 +1,12 @@
 .describe {
   border-top: 1px solid @line-color;
 }
+
 .describe__content {
   width: 280px;
   margin: 0 auto;
 }
+
 .describe__title {
   .font-bold();
   .mp-reset();
@@ -12,6 +14,7 @@
   margin-bottom: 17px;
   font-size: 18px;
 }
+
 .describe__textarea {
   width: 280px;
   height: 160px;
@@ -21,6 +24,7 @@
   background-color: @form-bg;
   box-sizing: border-box;
   padding: 16px 20px;
+
   &::placeholder {
     .font-bold();
     font-size: 18px;
@@ -28,10 +32,11 @@
     color: black;
   }
 }
+
 .desctibe_button {
   .font-bold();
   display: block;
-  margin-top: 51px;
+  margin-top: 46px;
   margin-bottom: 47px;
   width: 280px;
   height: 58px;
@@ -41,6 +46,7 @@
   font-size: 21px;
   line-height: 26px;
 }
+
 .describe__comment {
   display: none;
 }
@@ -53,9 +59,11 @@
     border: none;
     text-align: start;
   }
+
   .describe__content {
     width: auto;
   }
+
   .describe__title {
     .mp-reset();
     .font-bold();
@@ -64,6 +72,7 @@
     margin-bottom: 57px;
     font-size: 21px;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -73,6 +82,7 @@
       height: 1px;
       background-color: @line-color;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -83,27 +93,30 @@
       background-color: @line-color;
     }
   }
+
   .describe__textarea {
     width: 650px;
     padding: 16px 22px;
   }
+
   .describe__button-wrapper {
-    margin-top: 58px;
+    margin-top: 53px;
     margin-bottom: 66px;
     height: 58px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .desctibe_button {
     .mp-reset();
     display: block;
-
     width: 324px;
     height: 58px;
     box-sizing: border-box;
     padding-right: 10px;
   }
+
   .describe__comment {
     .mp-reset();
     display: block;
@@ -117,15 +130,19 @@
     width: 960px;
     margin-top: 63px;
   }
+
   .describe__title {
     .mp-reset();
     margin-bottom: 55px;
   }
+
   .describe__textarea {
     width: 960px;
+    padding-top: 16px;
   }
+
   .desctibe_button {
     width: 480px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 }
