@@ -32,6 +32,28 @@ img {
   height: auto;
 }
 
+.button {
+  .font-bold();
+  display: block;
+  color: @white;
+  background-color: @bg-lightblue;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: @bg-hoverblue;
+  }
+
+  &:active {
+    background-color: @bg-downblue;
+    color: @down-font;
+  }
+
+  &:disabled {
+    background-color: @bg-disabledgrey;
+  }
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 

@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="main-nav main-nav--open">
+    <nav class="main-nav main-nav--closed">
 
       <div class="main-nav__wrapper">
         <ul class="site-list">
@@ -61,7 +61,7 @@
         <h3 class="user-info__title">Представьтесь:</h3>
         <p class="user-info__item">
           <label for="name">Имя*:</label>
-          <input type="text" id="name" name="name" placeholder="Петр">
+          <input type="text" id="name" name="firstname" placeholder="Петр">
         </p>
         <p class="user-info__item">
             <label for="surname">Фамилия*:</label>
@@ -80,16 +80,16 @@
       <div class="contact__wrapper">
         <div class="contact__item contact__phone">
             <label class="contact__type" for="phone"><span>Контактный</span> телефон*:</label>
-            <div class="contact__input-wrapper">
-              <input type="tel" id="phone" name="phone" placeholder="Введите телефон">
+            <div class="contact__input-wrapper phone-wrapper">
+              <input class="contact__input " type="tel" id="phone" name="phone" placeholder="Введите телефон">
               <button class="contact__button contact__phone-button" type="button"></button>
             </div>
         </div>
 
         <div class="contact__item contact__email">
             <label class="contact__type" for="email">Электронная почта*:</label>
-            <div class="contact__input-wrapper">
-              <input type="email" id="email" name="email" placeholder="Введите e-mail">
+            <div class="contact__input-wrapper email-wrapper">
+              <input class="contact__input" type="email" id="email" name="email" placeholder="Введите e-mail">
               <button class="contact__button contact__email-button" type="button"></button>
             </div>
         </div>
@@ -208,6 +208,27 @@
       </a>
     </div>
   </footer>
+
+  <section class="modal modal-error">
+    <div class="modal__container modal-error__container">
+      <h3 class="modal__title modal-error__title"><span class="modal__title-block">ЧТО-ТО ПОШЛО</span> НЕ ТАК!</h3>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+      <button class="modal__button-error button">OK</button>
+  </section>
+
+  <section class="modal modal-sent">
+    <div class="modal__container modal-sent__container">
+      <h3 class="modal__title modal-sent__title">ВАШ ОТЗЫВ ОТПРАВЛЕН!</h3>
+      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+      </p>
+    </div>
+    <div class="modal__button-wrapper modal__button-wrapper--sent">
+      <button class="modal__button-sent button">ЗАКРЫТЬ ОКНО</button>
+    </div>
+  </section>
+
+  <script src="js/modal.js"></script>
 
 </body>
 </html>
