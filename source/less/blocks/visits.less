@@ -156,7 +156,7 @@
 
   .visits__checkbox input[type="checkbox"] + .visits__checkbox-indicator {
     position: absolute;
-    top: 1;
+    top: 0;
     left: 0;
 
     width: 56px;
@@ -176,7 +176,7 @@
   .visits__list {
     .list-reset();
     width: 960px;
-    height: 176px;
+    height: auto;
 
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +193,10 @@
     width: 205px;
     padding-left: 83px;
     margin-left: auto;
+  }
+
+  .visits__checkbox input[type="checkbox"] + .visits__checkbox-indicator {
+    top: 0;
   }
 
   .visits__checkbox--bridge {

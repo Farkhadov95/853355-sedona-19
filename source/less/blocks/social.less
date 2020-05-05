@@ -2,6 +2,12 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 2px;
+}
+
+.social--form {
+  padding-left: 0;
 }
 
 .social__item {
@@ -9,7 +15,9 @@
   width: 46px;
   height: 48px;
   display: flex;
-  align-items: center;
+  box-sizing: border-box;
+  padding-top: 15px;
+  line-height: 20px;
   justify-content: center;
   background-color: @bg-lightblue;
 
@@ -31,9 +39,23 @@
   fill: @white;
 }
 
+.social__link--twitter {
+  width: 17px;
+  height: 18px;
+}
+
+.social__link--facebook {
+  width: 9px;
+  height: 19px;
+}
+
+.social__link--youtube {
+  width: 20px;
+  height: 14px;
+}
+
 @media (min-width: @tablet-width) {
-  // .social {
-  //   padding-right: 4px;
-  //   padding-bottom: 4px;
-  // }
+  .social {
+    padding: 0;
+  }
 }
