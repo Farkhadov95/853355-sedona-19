@@ -14,27 +14,26 @@
 .features-list__item svg {
   position: absolute;
   fill: @bg-lightblue;
+  width: 37px;
+  height: 36px;
 }
 
-.features-list__house-img {
+.features-list__item-house {
+  position: absolute;
   top: 26px;
   left: 22px;
-  width: 37px;
-  height: 36px;
 }
 
-.features-list__gift-img {
+.features-list__item-gift {
+  position: absolute;
   top: 19px;
   left: 23px;
-  width: 37px;
-  height: 36px;
 }
 
-.features-list__burger-img {
+.features-list__item-burger {
+  position: absolute;
   top: 23px;
   left: 20px;
-  width: 37px;
-  height: 36px;
 }
 
 .features-list__content {
@@ -44,7 +43,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // outline: 1px solid green;
 }
 
 .features-living {
@@ -107,29 +105,46 @@
 
   .features-list__text-food {
     width: 158px;
+    box-sizing: border-box;
+    padding-left: 4px;
   }
 
   .features-list__text-block {
     display: block;
   }
 
-  .features-list__house-img {
+  .features-list__item-house {
     top: 60px;
     left: 90px;
     width: 75px;
     height: 72px;
   }
 
-  .features-list__gift-img {
+  .features-list__item-house svg {
+    width: 75px;
+    height: 72px;
+  }
+
+  .features-list__item-gift {
     top: 57px;
-    left: 96px;
+    left: 94px;
     width: 64px;
     height: 75px;
   }
 
-  .features-list__burger-img {
+  .features-list__item-gift svg {
+    width: 64px;
+    height: 75px;
+  }
+
+  .features-list__item-burger {
     top: 63px;
-    left: 89px;
+    left: 90px;
+    width: 77px;
+    height: 68px;
+  }
+
+  .features-list__item-burger svg {
     width: 77px;
     height: 68px;
   }
@@ -154,26 +169,21 @@
 
   .features-list__text-food {
     width: 283px;
+    padding: 0;
   }
 
-  .features-list__house-img {
+  .features-list__item-house {
     top: 60px;
     left: 161px;
-    width: 75px;
-    height: 72px;
   }
 
-  .features-list__gift-img {
+  .features-list__item-gift {
     top: 57px;
     left: 168px;
-    width: 64px;
-    height: 75px;
   }
 
-  .features-list__burger-img {
+  .features-list__item-burger {
     top: 63px;
     left: 161px;
-    width: 77px;
-    height: 68px;
   }
 }
