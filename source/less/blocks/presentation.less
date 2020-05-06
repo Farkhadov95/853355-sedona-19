@@ -28,6 +28,19 @@
   background-color: @bg-lightgrey;
 }
 
+.presentation__controls-wrapper svg {
+  color: @controls-color;
+
+  &:hover,
+  :focus {
+    color: @darkgrey;
+  }
+
+  &:active {
+    color: @controls-active;
+  }
+}
+
 .presentation__video img {
   width: 321px;
   height: 201px;
@@ -125,6 +138,19 @@
     background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     margin-top: -98px;
+  }
+
+  .presentation__controls-wrapper svg {
+    color: white;
+
+    &:hover,
+    :focus {
+      color: @controls-tablet-hover;
+    }
+
+    &:active {
+      color: @controls-tablet-active;
+    }
   }
 
   .presentation__line-wrapper {
