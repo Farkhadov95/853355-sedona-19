@@ -45,7 +45,7 @@
 .page-footer__subtitles svg {
   width: 41px;
   height: 45px;
-  fill: black;
+  // color: black;
 }
 
 .page-footer__subtitles--photo {
@@ -56,13 +56,23 @@
 .page-footer__subtitles--photo svg {
   width: 41px;
   height: 39px;
-  fill: black;
 }
 
 .page-footer__subtitles--form svg {
   height: 39px;
 }
 
+.page-footer__link {
+  color: black;
+
+  &:hover {
+    color: @bg-lightblue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .page-footer {
