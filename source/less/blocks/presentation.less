@@ -31,10 +31,12 @@
 .presentation__controls-wrapper svg {
   color: @controls-color;
 
-&:hover, :focus {
+  &:hover,
+  :focus {
     color: @darkgrey;
   }
-&:active {
+
+  &:active {
     color: @controls-active;
   }
 }
@@ -141,12 +143,14 @@
   .presentation__controls-wrapper svg {
     color: white;
 
-    &:hover, :focus {
-        color: @controls-tablet-hover;
-      }
+    &:hover,
+    :focus {
+      color: @controls-tablet-hover;
+    }
+
     &:active {
-        color:@controls-tablet-active;
-      }
+      color: @controls-tablet-active;
+    }
   }
 
   .presentation__line-wrapper {
