@@ -1,7 +1,10 @@
 .contact {
   width: 320px;
-  height: 287px;
+  min-height: 287px;
   border-top: 1px solid @line-color;
+
+  box-sizing: border-box;
+  padding-bottom: 15px;
 }
 
 .contact__container {
@@ -68,7 +71,7 @@
 
 .contact__button {
   width: 58px;
-  height: 58px;
+  min-height: 58px;
   position: absolute;
   top: 0;
   right: 0;
@@ -90,8 +93,9 @@
   .contact {
     order: 3;
     width: 650px;
-    height: 322px;
+    min-height: 322px;
     border-top: none;
+    padding-bottom: 0;
   }
 
   .contact__container {
@@ -143,7 +147,7 @@
 @media (min-width: @desktop-width) {
   .contact {
     width: 960px;
-    height: 225px;
+    min-height: 225px;
   }
 
   .contact__container {
@@ -156,6 +160,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
   }
 
   .contact__title {
@@ -179,6 +184,7 @@
   .contact__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .contact__input-wrapper {

@@ -47,11 +47,11 @@
   cursor: pointer;
 }
 
-.impression__checkbox input[type="checkbox"] {
+.impression__checkbox input[type="radio"] {
   display: none;
 }
 
-.impression__checkbox input[type="checkbox"] + .impression__checkbox-indicator {
+.impression__checkbox input[type="radio"] + .impression__checkbox-indicator {
   position: absolute;
   left: 0;
 
@@ -61,15 +61,16 @@
   background-color: @form-bg;
 }
 
-.impression__checkbox input[type="checkbox"]:focus + .impression__checkbox-indicator {
-  outline: thin dotted;
+.impression__checkbox input[type="radio"]:focus + .impression__checkbox-indicator {
+  // outline: thin dotted;
+  outline: 1px solid red;
 }
 
-.impression__checkbox input[type="checkbox"]:hover + .impression__checkbox-indicator {
+.impression__checkbox input[type="radio"]:hover + .impression__checkbox-indicator {
   background-color: @form-hover;
 }
 
-.impression__checkbox input[type="checkbox"]:checked + .impression__checkbox-indicator::after {
+.impression__checkbox input[type="radio"]:checked + .impression__checkbox-indicator::after {
   content: "";
   position: absolute;
   top: 17px;
@@ -79,6 +80,16 @@
   border-radius: 50%;
   background-color: black;
 }
+
+.impression__checkbox input[type="radio"]:active + .impression__checkbox-indicator {
+  background-color: @bg-active-button;
+}
+
+.impression__checkbox input[type="radio"]:active + .impression__checkbox-indicator::after {
+  background-color: @bg-active-element;
+}
+
+
 
 @media (min-width: @tablet-width) {
   .impression {
