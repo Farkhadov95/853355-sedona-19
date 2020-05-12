@@ -48,7 +48,9 @@
 }
 
 .impression__checkbox input[type="radio"] {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  left: -999999px;
 }
 
 .impression__checkbox input[type="radio"] + .impression__checkbox-indicator {
@@ -62,8 +64,8 @@
 }
 
 .impression__checkbox input[type="radio"]:focus + .impression__checkbox-indicator {
-  // outline: thin dotted;
-  outline: 1px solid red;
+  outline: thin dotted;
+  // outline: 1px solid red;
 }
 
 .impression__checkbox input[type="radio"]:hover + .impression__checkbox-indicator {
@@ -88,7 +90,6 @@
 .impression__checkbox input[type="radio"]:active + .impression__checkbox-indicator::after {
   background-color: @bg-active-element;
 }
-
 
 
 @media (min-width: @tablet-width) {
