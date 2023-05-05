@@ -9,6 +9,7 @@ The website was built using the following technologies and tools:
 * Adobe Photoshop for editing and optimizing images
 * HTML for structuring the content
 * CSS and Less for styling and layout
+* JavaScript for simple functionality
 * Gulp for automating tasks such as compilation, minification, and browser refreshing
 
 Getting Started.
